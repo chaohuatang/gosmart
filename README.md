@@ -1,5 +1,3 @@
 # gosmart
 
-Golang Surveying and Mapping Assistance Reference Tools (gosmart)
-
-for college students
+Golang Surveying and Mapping Assistance Reference Tools (gosmart) for college students
