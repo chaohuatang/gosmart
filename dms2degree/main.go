@@ -74,6 +74,39 @@ func Degree2Radian(degree float64) (radian float64) {
 	return
 }
 
+//函数：将度(角度制)degree的数据进行转换为dms格式
+func Degree2Dms(degree float64) (dms string) {
+
+	dInt, dFloat := math.Modf(degree)
+
+	mInt, mFloat := math.Modf(dFloat * 60.0)
+	var m string
+	if mInt < 10 {
+		m = "0" + strconv.Itoa(int(mInt))
+	} else {
+		m = strconv.Itoa(int(mInt))
+	}
+
+	var s0 string
+	if mFloat*60.0 < 10 {
+		s0 = "0" + strconv.FormatFloat(mFloat*60, 'f', -1, 64)
+	} else {
+		s0 = strconv.FormatFloat(mFloat*60, 'f', -1, 64)
+	}
+
+	s := make([]rune, 0, 1)
+	for k, v := range s0 {
+		if k < 9 && v != '.' {
+			s = append(s, v)
+		}
+	}
+
+	dms = strconv.Itoa(int(dInt)) + "." + m + string(s)
+
+	return
+}
+
+
 func main() {
 
 	//---------------------------------------------------
