@@ -8,4 +8,4 @@ Golang Surveying and Mapping Assistance Reference Tools.
 
 尽量遵循unix哲学，让每个功能（子程序）都可以独立运行。
 
-如果精力和时间允许，后续考虑开发gui和web版。
+如果精力和时间允许，后续考虑开发gui（guigosmart）和web（webgosmart）版。
