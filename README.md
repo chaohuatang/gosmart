@@ -1,5 +1,9 @@
 # gosmart
 
-基于golang的基本测绘工具集，主要面向大专院校的学生。遵循unix哲学，每个小程序都可以独立运行，也可以使用脚本批量运行。
+Golang Surveying and Mapping Assistance Reference Tools.
 
-Golang Surveying and Mapping Assistance Reference Tools (gosmart) for college students.
+使用golang语言开发的基本的、常用的测绘工具集，主要面向大专院校的学生，通过编程的方式，让其更好的掌握专业知识。
+
+尽量遵循unix哲学，每个小程序都可以独立运行，也可以使用脚本批量运行。
+
+如果精力和时间允许，后续考虑开发gui和web版。
